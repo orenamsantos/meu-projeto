@@ -1,76 +1,3 @@
-/* =============================================
-   Protocolo Desinx — Styles
-   ============================================= */
-
-/* ===== RESET & VARIABLES ===== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --primary: #0A7B83;
-  --primary-light: #0a7b8318;
-  --primary-mid: #0a7b8340;
-  --accent: #17B8A2;
-  --accent-light: #17b8a220;
-  --bg: #FAF8F5;
-  --bg-card: #FFFFFF;
-  --text: #2D2D2D;
-  --text-light: #6B7280;
-  --coral: #E85D4A;
-  --coral-light: #e85d4a15;
-  --danger: #DC2626;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
-  --radius: 12px;
-  --radius-lg: 16px;
-  --font-body: 'DM Sans', system-ui, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
-  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-body);
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(ellipse at 20% 0%, rgba(10, 123, 131, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 100%, rgba(23, 184, 162, 0.05) 0%, transparent 60%),
-    var(--bg);
-}
-
-
-/* ===== LAYOUT ===== */
-.quiz-container {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 20px 16px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-/* ===== PROGRESS BAR ===== */
 .progress-bar {
   display: flex;
   gap: 4px;
@@ -124,8 +51,6 @@ body::before {
   background: var(--accent);
 }
 
-
-/* ===== STEP ANIMATIONS ===== */
 .step {
   display: none;
   flex-direction: column;
@@ -147,8 +72,6 @@ body::before {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-
-/* ===== LOGO ===== */
 .logo-wrap {
   display: flex;
   align-items: center;
@@ -178,8 +101,6 @@ body::before {
   color: var(--accent);
 }
 
-
-/* ===== HEADINGS & TEXT ===== */
 .step-question {
   font-family: var(--font-display);
   font-size: 26px;
@@ -207,8 +128,6 @@ body::before {
   font-style: italic;
 }
 
-
-/* ===== OPTION CARDS ===== */
 .options-grid {
   display: grid;
   gap: 10px;
@@ -277,8 +196,6 @@ body::before {
   font-weight: 700;
 }
 
-
-/* ===== BUTTONS ===== */
 .btn-primary {
   width: 100%;
   padding: 16px 24px;
@@ -346,8 +263,6 @@ body::before {
   display: block;
 }
 
-
-/* ===== START SCREEN ===== */
 .start-hero {
   padding: 12px 0 24px;
   display: flex;
@@ -386,8 +301,6 @@ body::before {
   text-align: center;
 }
 
-
-/* ===== REVIEWS ===== */
 .review-card {
   display: flex;
   align-items: flex-start;
@@ -438,8 +351,6 @@ body::before {
   font-weight: 600;
 }
 
-
-/* ===== LEGAL CHECKBOX ===== */
 .legal-wrap {
   margin: 14px 0;
 }
@@ -515,8 +426,6 @@ body::before {
   40%, 80% { transform: translateX(6px); }
 }
 
-
-/* ===== TRANSITION SCREEN ===== */
 .transition-screen {
   text-align: center;
   padding: 24px 0;
@@ -558,8 +467,6 @@ body::before {
   line-height: 1.6;
 }
 
-
-/* ===== FORM INPUTS ===== */
 .input-group {
   margin-bottom: 20px;
 }
@@ -678,8 +585,6 @@ body::before {
   margin-bottom: 16px;
 }
 
-
-/* ===== LOADING SCREEN ===== */
 .loading-screen {
   display: flex;
   flex-direction: column;
@@ -760,8 +665,6 @@ body::before {
   font-size: 32px;
 }
 
-
-/* ===== RESULT SCREEN ===== */
 .result-header {
   text-align: center;
   margin-bottom: 28px;
@@ -881,8 +784,6 @@ body::before {
   margin-bottom: 24px;
 }
 
-
-/* ===== PRICING SCREEN ===== */
 .pricing-header {
   text-align: center;
   margin-bottom: 24px;
@@ -1033,8 +934,6 @@ body::before {
 .p-review .text          { font-size: 13px; line-height: 1.5; color: var(--text); margin-bottom: 4px; font-style: italic; }
 .p-review .author        { font-size: 12px; color: var(--text-light); font-weight: 600; }
 
-
-/* ===== THANK YOU ===== */
 .thankyou {
   text-align: center;
   padding: 40px 0;
@@ -1087,8 +986,6 @@ body::before {
 .upsell-box p     { font-size: 13px; color: var(--text-light); margin-bottom: 12px; }
 .upsell-box .price { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
 
-
-/* ===== TOAST ===== */
 .toast {
   position: fixed;
   bottom: 90px;
@@ -1114,7 +1011,6 @@ body::before {
   transform: translateX(-50%) translateY(0);
 }
 
-/* ===== INTL-TEL-INPUT OVERRIDES ===== */
 .iti {
   width: 100%;
   display: block;
@@ -1127,7 +1023,6 @@ body::before {
   border: 1px solid #E5E7EB;
 }
 
-/* ===== PRICING ANCHORING & GUARANTEE ===== */
 .price-anchoring {
   background: white;
   border-radius: var(--radius);
@@ -1172,63 +1067,6 @@ body::before {
   margin-bottom: 20px;
 }
 
-/* Economy badge (green) for annual plan */
-.badge.badge-economy {
-  background: #16A34A;
-  color: white;
-}
-
-/* Social proof text below pricing cards */
-.pricing-social-proof {
-  font-size: 13px;
-  color: var(--text-light);
-  text-align: center;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-.pricing-social-proof strong {
-  color: var(--primary);
-}
-
-/* Detailed guarantee box */
-.guarantee-box-full {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 20px;
-  border-radius: var(--radius-lg);
-  background: var(--bg-card);
-  border: 1px solid #f0eeeb;
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 24px;
-}
-
-.guarantee-box-icon {
-  font-size: 28px;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
-.guarantee-box-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.guarantee-box-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-
-.guarantee-box-text {
-  font-size: 13px;
-  color: var(--text-light);
-  line-height: 1.5;
-}
-
-/* ===== EXIT INTENT MODAL ===== */
 .exit-modal {
   position: fixed;
   inset: 0;
@@ -1297,9 +1135,96 @@ body::before {
   margin-top: 12px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (min-width: 640px) {
   .quiz-container  { padding: 32px 24px; }
   .step-question   { font-size: 28px; }
   .options-grid.two-col { grid-template-columns: 1fr 1fr; }
+}
+
+/* Guarantee Block — Prominent */
+.guarantee-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  border: 2px solid #86efac;
+  margin-bottom: 24px;
+}
+.guarantee-block .guarantee-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+.guarantee-block .guarantee-text strong {
+  font-size: 15px;
+  color: var(--text);
+  display: block;
+  margin-bottom: 4px;
+}
+.guarantee-block .guarantee-text p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Badge save variant */
+.badge-save {
+  background: linear-gradient(135deg, #059669, #10b981) !important;
+  color: #fff !important;
+}
+
+/* Dynamic Feedback — inline after options */
+.dynamic-feedback {
+  display: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+  border-left: 4px solid var(--primary);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text);
+  margin: 12px 0 8px;
+  animation: fadeIn 0.35s ease both;
+}
+.dynamic-feedback.visible {
+  display: block;
+}
+
+/* Diagnosis Card on Result */
+.diagnosis-card {
+  background: linear-gradient(135deg, #fef2f2, #fff7ed);
+  border: 2px solid #f97316;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+.diagnosis-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9a3412;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.diagnosis-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #c2410c;
+  margin-bottom: 8px;
+}
+.diagnosis-desc {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.diagnosis-explain {
+  font-size: 13px;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 8px;
 }
